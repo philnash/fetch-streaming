@@ -1,0 +1,19 @@
+{
+  "name": "fetch-streaming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "fetch",
+    "javascript"
+  ],
+  "author": "Phil Nash <philnash@gmail.com> (https://philna.sh/)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
