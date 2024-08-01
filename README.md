@@ -22,11 +22,17 @@ npm install
 Run the server:
 
 ```sh
-npm start
+npm run dev
 ```
 
 Then open the browser to http://localhost:3000/. Press the start button to stream the response from the server and see the difference between streaming and otherwise.
 
 ## The code
 
-Check the JavaScript in `public/index.html` to see the difference and how to implement fetch with streams in your applications.
+Check the JavaScript in `src/streaming.js` to see the difference and how to implement fetch with streams in your applications.
+
+### Server-sent events
+
+There is also an example of sending the data from the server in the format of server-sent events. This is then parsed in the client by the [eventsource-parser](https://www.npmjs.com/package/eventsource-parser) module. You can see this in action by running the server and visiting http://localhost:3000/event-stream.html.
+
+The code for this version is available in `src/event-stream.js`.

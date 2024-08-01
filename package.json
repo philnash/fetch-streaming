@@ -1,10 +1,11 @@
 {
   "name": "fetch-streaming",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "server": "node server.js",
+    "client": "parcel watch 'src/*.html'",
+    "dev": "run-p client server"
   },
   "keywords": [
     "fetch",
@@ -14,6 +15,14 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "eventsource-parser": "^1.1.2",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.12.0"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
   }
 }

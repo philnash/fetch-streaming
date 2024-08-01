@@ -2,7 +2,7 @@ import Express from "express";
 
 const app = new Express();
 
-app.use(Express.static("public"));
+app.use(Express.static("dist"));
 
 app.get("/stream", async (_req, res) => {
   res.set("Content-Type", "text/plain");
@@ -12,6 +12,20 @@ app.get("/stream", async (_req, res) => {
 
   for (let chunk of textChunks) {
     res.write(chunk);
+    await sleep(250);
+  }
+
+  res.end();
+});
+
+app.get("/event-stream", async (_req, res) => {
+  res.set("Content-Type", "text/event-stream");
+  res.set("Transfer-Encoding", "chunked");
+
+  const textChunks = text.replace(/\n/g, "<br>").split(/(?<=\.)/g);
+
+  for (let chunk of textChunks) {
+    res.write(`event: message\ndata: ${chunk}\n\n`);
     await sleep(250);
   }
 
