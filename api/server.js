@@ -1,7 +1,11 @@
-const Express = require("express");
+import Express from "express";
 
 const app = new Express();
-module.exports = app;
+export default app;
+export const config = {
+  supportsResponseStreaming: true,
+};
+export const dynamic = "force-dynamic";
 
 app.use(Express.static("dist"));
 

@@ -1,6 +1,7 @@
 {
   "name": "fetch-streaming",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "server": "node ./api/server.js",
     "client": "rimraf ./dist && parcel watch 'src/*.html'",
