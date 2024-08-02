@@ -2,5 +2,5 @@
   "version": 2,
   "buildCommand": "npm run build",
   "devCommand": "npm start",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/server.js" }]
 }
