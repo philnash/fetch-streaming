@@ -1,6 +1,6 @@
 import Express from "express";
 
-const app = new Express();
+export const app = new Express();
 
 app.use(Express.static("dist"));
 
@@ -32,7 +32,7 @@ app.get("/event-stream", async (_req, res) => {
   res.end();
 });
 
-const port = "3000";
+const port = process.env.PORT || "3000";
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

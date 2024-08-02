@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm start",
+  "cleanUrls": true,
+  "framework": null
+}

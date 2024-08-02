@@ -5,7 +5,9 @@
   "scripts": {
     "server": "node server.js",
     "client": "parcel watch 'src/*.html'",
-    "dev": "run-p client server"
+    "dev": "run-p client server",
+    "build": "parcel build 'src/*.html'",
+    "start": "npm run server"
   },
   "keywords": [
     "fetch",
