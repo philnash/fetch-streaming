@@ -12,12 +12,29 @@
       <h1>Streaming with fetch</h1>
     </header>
     <main>
+      <p>
+        This is an example of different ways of loading data onto a page with
+        <code>fetch</code>.
+      </p>
+      <p>
+        On the left, the response is gathered using
+        <code>response.text()</code> and then printed to the page. On the right,
+        the body is used as a <code>ReadableStream</code> and printed to the
+        page as it arrives.
+      </p>
+      <p>
+        Check out the source
+        <a href="https://github.com/philnash/fetch-streaming">on GitHub</a>.
+      </p>
       <button id="start">Start</button>
       <div class="outputs">
         <div id="output"></div>
         <div id="stream-output"></div>
       </div>
     </main>
+    <footer>
+      <p>Made by <a href="https://twitter.com/philnash">philnash</a></p>
+    </footer>
 
     <script src="./streaming.js"></script>
   </body>

@@ -1,99 +1,123 @@
-      * {
-        box-sizing: border-box;
-      }
+* {
+  box-sizing: border-box;
+}
 
-      html {
-        margin: 0;
-        padding: 0;
-      }
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-      body {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-          segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
-          arial, sans-serif;
-      }
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-      header {
-        width: 100%;
-        background: #000;
-        padding: 1rem;
-        margin-bottom: 2rem;
-      }
+header {
+  width: 100%;
+  background: #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
 
-      header h1 {
-        max-width: 960px;
-        color: #fff;
-        margin: 0 auto;
-      }
+header h1 {
+  max-width: 960px;
+  color: #fff;
+  margin: 0 auto;
+}
 
-      main {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
 
-      button {
-        border: none;
-        margin: 0 auto 1rem;
-        display: block;
-        background-color: #410166;
-        border-radius: 6px;
-        color: #fff;
-        font-weight: bolder;
-        font-size: 2rem;
-        padding: 1rem 4rem;
-      }
+footer {
+  width: 100%;
+  background: #000;
+}
+footer p {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #fff;
+}
+footer p a,
+footer p a:hover,
+footer p a:focus,
+footer p a:visited {
+  color: #fff;
+}
 
-      button:hover {
-        background-color: #5f1f8c;
-      }
+button {
+  border: none;
+  margin: 0 auto 1rem;
+  display: block;
+  background-color: #410166;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+}
 
-      .outputs {
-        display: flex;
-        gap: 1rem;
-      }
+button:hover {
+  background-color: #5f1f8c;
+}
 
-      .outputs>div {
-        flex: 1;
-        border: 3px solid #333;
-        border-radius: 6px;
-        padding: 1rem;
-      }
+.outputs {
+  display: flex;
+  gap: 1rem;
+}
 
-      .loader {
-        width: 15px;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        animation: loading 1s infinite linear;
-        margin: auto;
-      }
+.outputs > div {
+  flex: 1;
+  border: 3px solid #333;
+  border-radius: 6px;
+  padding: 1rem;
+}
 
-      @keyframes loading {
-        0% {
-          box-shadow: 20px 0 #000, -20px 0 #0002;
-          background: #000;
-        }
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: loading 1s infinite linear;
+  margin: auto;
+}
 
-        25% {
-          box-shadow: 20px 0 #000, -20px 0 #0002;
-          background: #0002;
-        }
+@keyframes loading {
+  0% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #000;
+  }
 
-        50% {
-          box-shadow: 20px 0 #0002, -20px 0 #000;
-          background: #0002;
-        }
+  25% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #0002;
+  }
 
-        75% {
-          box-shadow: 20px 0 #0002, -20px 0 #000;
-          background: #000;
-        }
+  50% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #0002;
+  }
 
-        100% {
-          box-shadow: 20px 0 #000, -20px 0 #0002;
-          background: #000;
-        }
-      }
+  75% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #000;
+  }
+
+  100% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #000;
+  }
+}
