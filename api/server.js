@@ -1,6 +1,7 @@
 import Express from "express";
 
 export const app = new Express();
+export default app;
 
 app.use(Express.static("dist"));
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "server": "node server.js",
+    "server": "node ./api/server.js",
     "client": "rimraf ./dist && parcel watch 'src/*.html'",
     "dev": "run-p client server",
     "build": "rimraf ./dist && parcel build 'src/*.html' --no-cache",
