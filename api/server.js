@@ -1,7 +1,7 @@
-import Express from "express";
+const Express = require("express");
 
-export const app = new Express();
-export default app;
+const app = new Express();
+module.exports = app;
 
 app.use(Express.static("dist"));
 
