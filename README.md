@@ -1,6 +1,6 @@
 # Streaming with fetch
 
-This repository is an example server that streams a response to a front-end. 
+This repository is an example server that streams a response to a front-end. To learn more about why streaming is useful check out this article on [how using fetch with the streams API gets you faster UX with GenAI apps](https://www.datastax.com/blog/fetch-streams-api-for-faster-ux-generative-ai-apps).
 
 The front-end compares what it looks like to load the same endpoint all in one or progressively using streams.
 

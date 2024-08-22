@@ -25,7 +25,11 @@ startButton.addEventListener("click", async () => {
     });
   }
 
-  const streamResponse = await fetch("/event-stream");
+  const streamResponse = await fetch("/event-stream", {
+    headers: {
+      Accept: "text/event-stream",
+    },
+  });
   if (streamResponse.ok) {
     // Streaming the response through a TextDecoderStream and to a WritableStream.
     const decoderStream = new TextDecoderStream("utf-8");
